@@ -1,0 +1,77 @@
+<project name="maven-antrun-" >
+	 
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+
+        <classpath>
+
+                <pathelement location="/home/wasadmin/release/svn_ant/apache-ant-1.7.1/lib/ant-contrib-1.0b3.jar"/>
+
+        </classpath>
+
+        </taskdef>
+
+ 
+
+ 
+
+ 
+
+ 
+
+        <target name="createDbProcedures" description="create db-procedures" >
+
+                <foreach target="spxmi2sql" param="xmlfile">
+
+                        <fileset dir="/home/wasadmin/release/jenkinsworkspace/Final_Brokerage_Build_8_2_1/fdDbProcedures" casesensitive="yes">
+
+                                <include name="**/*.spxmi"/>
+
+                        </fileset>
+
+                </foreach>
+
+                <zip destfile="/home/wasadmin/release/jenkinsworkspace/Final_Brokerage_Build_8_2_1/fdDbProcedures/fdDbProcedures.zip" basedir="/home/wasadmin/release/jenkinsworkspace/Final_Brokerage_Build_8_2_1/fdDbProcedures" includes="*.sql"  />
+
+        </target>
+
+ 
+
+ 
+
+        <target name="spxmi2sql" >
+
+                <echo file="${xmlfile}" append="true"> </echo>
+
+                <xmlproperty file="${xmlfile}" collapseAttributes="true"/>
+
+ 
+
+                <condition property="sprocSource" value="${xmi:XMI.DB2Model:DB2Procedure.source.body}">
+
+                        <length string="${xmi:XMI.DB2Model:DB2Procedure.source.body}" when="greater" length="50" />
+
+                </condition>
+
+ 
+
+                <condition property="sprocSource" value="${DB2Model:DB2Procedure.source.body}">
+
+                        <length string="${DB2Model:DB2Procedure.source.body}" when="greater" length="50" />
+
+                </condition>
+
+ 
+
+                <condition property="sprocSource" value="${xmi:XMI.DB2Model:DB2Procedure.source.clearBody}">
+
+                        <length string="${xmi:XMI.DB2Model:DB2Procedure.source.clearBody}" when="greater" length="50" />
+
+                </condition>
+
+ 
+
+                <echo file="${xmlfile}.sql">${sprocSource}</echo>
+
+        </target>
+
+</project>

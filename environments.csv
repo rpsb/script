@@ -1,0 +1,18 @@
+SE1: SE1,SE1,Production,Yes,Active,8.2.5/419,2019-01-25,2014-10-10
+SE5: SE5,SE5,Production,Yes,Active,8.2.3/287,2018-11-09,2016-07-11 
+CET: Cetera,Cetera Production Site,Production,Yes,Active,8.2.5/419,2018-11-01,2017-12-15 
+FRB: FRB,FRB dedicated environment,Production,Yes,Active,8.2.3/287,2018-11-01,2017.3/1000,2017-09-21 
+WES: WebSphere,Extreme Scale Cluster,Production,Yes,Active,2016-05-09,2016-05-09 
+SE2: SE2,Shared Environment 2,Production,Yes,Active,8.2.3/287,2018-11-09,2017-09-21
+FIX: FIX Environment,FIX Environment,Production,Yes,Active,2018-06-21,2018-06-21
+BARP: Barra Production,Barra Production,Production,Yes,Active,2015-03-06,2015-03-06 
+SE4: SE4,SE4,Production,Yes,Active,8.2.3/287,2018-11-09,2016-02-17 
+GWEQ: Gateway,EQ,Gateway EQ,Production,No,Active 	 	 	 	 
+RJ: RaymondJames,Raymond James production site,Production,Yes,Active,8.2.3/283,2017-11-11,2014-10-24 
+LPL: LPL,LPL Production Environment,Production,Yes,Active,8.2.3.1/25,2019-02-08,2014-10-13 
+CIR: Cambridge,Cambridge Production Environment,Production,Yes,Active,8.2.5/419,2018-11-01,2017.3/1000,2017-09-21 
+PER: Pershing,Pershing production site,Production,Yes,Active,8.2.5/419,2018-11-09,2014-10-07 
+SE3: SE3,Shared Environment 3,Production,Yes,Active,8.2.5/419,2018-11-01,2017.3/,2017-09-21 
+GWRW: Gateway RW,Gateway Raging Wire,Production,No,Active 	 	 	 	 
+ING: VOYA Financial Advisors (ING),Voya Financial Advisors Production Environment Previously known as: ING Financial Partners Production Environment,Production,Yes,Active,8.2.5/419,2018-11-09,2017-09-21 
+CLV: Clearview,Clearview production site,Production,Yes,Active,8.2.3/287,2018-11-01,2017.3/1000,2017-09-21
